@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+    <head>
+        <title>Appraisal Calculator</title>
+        <meta charset="UTF-8">
+        <script src="scripts.js"></script>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <form>
+            <!-- Room Name -->
+            <fieldset id="room_name">
+                <legend>Room Name <small><i>(optional)</i></small></legend>
+                <input type="text" list="room_types" placeholder="(optional)" />
+                <datalist id="room_types">
+                    <option>Bedroom</option>
+                    <option>Kitchen</option>
+                    <option>Dining Room</option>
+                    <option>Living Room</option>
+                    <option>Bathroom, full</option>
+                    <option>Bathroom, 1/2</option>
+                    <option>Bathroom, 3/4</option>
+                    <option>Foyer</option>
+                    <option>Laundry</option>
+                    <option>Den</option>
+                    <option>Office</option>
+                    <option>Basement</option>
+                </datalist>
+
+            </fieldset>
+
+            <!-- Room Size -->
+            <fieldset id="room_size">
+                <legend>Room Size</legend>
+                <button> &minus; </button>
+                <input name="room_size" type="text" value=1>
+                <button> &plus; </button>
+            </fieldset>
+                    
+            <!-- Floors -->
+            <fieldset id="floors">
+                <legend>Floors</legend>
+
+                <input type="text" list="floor_types" />
+                <datalist id="floor_types">
+                    <option>Bedroom</option>
+                    <option>Kitchen</option>
+                    <option>Dining Room</option>
+                    <option>Living Room</option>
+                    <option>Bathroom, full</option>
+                    <option>Bathroom, 1/2</option>
+                    <option>Bathroom, 3/4</option>
+                    <option>Foyer</option>
+                    <option>Laundry</option>
+                    <option>Den</option>
+                    <option>Office</option>
+                    <option>Basement</option>
+                </datalist>
+                <input id="styleme" type="number" value="100" />%
+                <br>
+                <br>
+                <button>Add another floor type</button>
+            </fieldset>
+            
+        </form>
+    </body>
+</html>

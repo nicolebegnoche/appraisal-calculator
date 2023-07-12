@@ -1,0 +1,56 @@
+form {
+  text-align: center;
+}
+
+fieldset {
+  /* forces fields to stay on the same line */
+  white-space: nowrap;
+  margin-top: 1em;
+}
+
+/* Hide number field up/down arrows in Firefox */
+input [type=number] {
+  -moz-appearance: text;
+}
+/* Hide number field up/down arrows in
+   Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+ -webkit-appearance: none;
+}
+
+
+
+
+/* Room Name */
+
+#room_name input {
+  text-align: center;
+}
+
+
+/* Room Size */
+
+#room_size input,
+#room_size button {
+  font-size:200%;
+  width: 2em;
+  text-align: center;
+}
+
+
+/* Floor Types */
+
+#floors input[type=number] {
+  width: 2em;
+  text-align: center;
+  margin-left:1em;
+}
+
+
+
+/* #floor_types input {
+  background-color: blue;
+  width:3em;
+} */
+
